@@ -19,6 +19,8 @@ input,button{
   background-color: white;
   padding: 8px;
   box-shadow: 0 1px 1px rgba(0,0,0,0.25);
+  position: relative;
+  z-index: 1;
 }
 
 .content{
@@ -85,4 +87,14 @@ input,button{
   color: white;
   font-size: 14px;
   font-weight: bold;
+}
+
+.banner{
+  height: 380px;
+  background-color: #55ACEE;
+}
+
+.banner img{
+  height: 100%;
+    max-width: 100%;
 }
