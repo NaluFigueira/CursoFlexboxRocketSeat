@@ -90,11 +90,72 @@ input,button{
 }
 
 .banner{
-  height: 380px;
+  height: 380;
   background-color: #55ACEE;
 }
 
 .banner img{
-  height: 100%;
-    max-width: 100%;
+  width: 100%;
+  max-height: 100%;
+}
+
+.bar {
+  background-color: white;
+  box-shadow: 0px 1px 1px  rgba(0,0,0,0.25);
+}
+
+.bar .content{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-left: 285px;
+}
+
+.barList{
+  list-style: none;
+  display: flex;
+}
+
+.barList li{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 5px 15px;
+  color: #667580;
+  position: relative;
+}
+
+.barList li span{
+  font-size: 13px;
+  font-weight: bold;
+}
+
+.barList li strong{
+  font-size: 18px;
+}
+
+div.bar .content ul li.active strong{
+  color: #3BB9E3;
+}
+
+div.bar .content ul li.active::after{
+  content: '';
+  height: 2px;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background: #3BB9E3;
+}
+
+.bar div{
+  display: flex;
+  align-items: center;
+}
+
+.follow{
+  background-color: white;
+  border: 1px solid #55ACEE;
+  color: #55ACEE;
+  margin-right: 15px;
 }
