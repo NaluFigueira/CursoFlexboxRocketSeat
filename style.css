@@ -17,16 +17,15 @@ input,button{
 
 .header{
   background-color: white;
-  padding: 8px;
+  padding: 6px;
   box-shadow: 0 1px 1px rgba(0,0,0,0.25);
   position: relative;
   z-index: 1;
 }
 
 .content{
-  max-width: 1170px;
+  max-width: 1200px;
   margin: 0 auto;
-  padding: 0 30px;
 }
 
 .header .content{
@@ -90,7 +89,7 @@ input,button{
 }
 
 .banner{
-  height: 380;
+  height: 340;
   background-color: #55ACEE;
 }
 
@@ -107,8 +106,8 @@ input,button{
 .bar .content{
   display: flex;
   align-items: center;
-  justify-content: space-between;
-  margin-left: 285px;
+  justify-content: space-around;
+  margin-right: 70px;
 }
 
 .barList{
@@ -158,4 +157,94 @@ div.bar .content ul li.active::after{
   border: 1px solid #55ACEE;
   color: #55ACEE;
   margin-right: 15px;
+}
+
+div.body{
+  display: flex;
+}
+
+aside.info{
+  width: 230px;
+  display: flex;
+  flex-direction: column;
+}
+
+.avatar{
+  border-radius: 50%;
+  border: 6px solid white;
+  width: 200px; 
+  height: 200px;
+  margin-top: -140px;
+}
+
+aside.info strong{
+  font-size: 21px;
+}
+
+aside.info span{
+  font-size: 13px;
+  color: #667580;
+}
+
+aside.info .description{
+  color: black;
+  margin-top:15px;
+  margin-bottom:15px;
+}
+
+aside.info ul{
+  list-style: none;
+}
+
+aside.info li{
+  display: flex;
+  align-items: center;
+  margin-top:5px;
+}
+
+aside.info li img{
+  margin-right:5px;
+}
+
+div.followersAndPhotos {
+  display: flex;
+  flex-direction: column;
+  margin-top: 15px;
+}
+
+div.followersAndPhotos .title {
+  display: flex;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+div.followersAndPhotos .title img{
+  margin-right: 5px;
+}
+
+div.followersAndPhotos .title strong{
+  color: #3BB9E3;
+  font-size: 14px;
+  font-weight: normal;
+}
+
+.followersAvatar,.photos{
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.followersAvatar div{
+  background-color: #D0D5D9;
+  border-radius: 50%;
+  margin: 5px 5px 5px 0;
+  height: 41px;
+  width: 41px;
+}
+
+.photos div{
+  background-color: #D0D5D9;
+  border-radius: 4px;
+  margin: 0 5px 5px 0;
+  height: 46px;
+  width: 71px;
 }
