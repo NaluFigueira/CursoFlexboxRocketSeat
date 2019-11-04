@@ -107,7 +107,7 @@ input,button{
   display: flex;
   align-items: center;
   justify-content: space-around;
-  margin-right: 70px;
+  margin-right: 50px;
 }
 
 .barList{
@@ -163,6 +163,96 @@ div.body{
   display: flex;
 }
 
+div.body .feed{
+  flex: 1;
+  background-color: white;
+  margin: 10px 20px;
+}
+
+div.body .feed nav{
+  border-bottom: 1px solid #e6ecf0;
+  padding: 10px 15px;
+}
+
+div.body .feed nav a{
+  text-decoration: none;
+  color: #3BB9E3;
+  font-size: 18px;
+  font-weight: bold;
+  margin-left: 20px;
+}
+
+div.body .feed nav a:first-child{
+  margin: 0;
+}
+
+div.body .feed nav a.active{
+  color: black;
+}
+
+div.body .feed ul.tweets{
+  list-style: none;
+}
+
+div.body .feed ul.tweets li{
+  border-bottom: 1px solid #e6ecf0;
+  padding: 10px 15px;
+  display: flex;
+}
+
+div.body .feed ul.tweets li > img{
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+}
+
+div.body .feed ul.tweets li .info{
+  margin-left: 10px;
+  display: flex;
+  flex-direction: column;
+}
+
+div.body .feed ul.tweets li .info strong{
+  font-size: 14px;
+  color: #1F2326;
+}
+
+div.body .feed ul.tweets li .info strong span{
+  font-weight: normal;
+  font-size: 13px;
+  color: #7b8b9a;
+}
+
+div.body .feed ul.tweets li .info p{
+  font-size: 14px;
+  color: #1F2326;
+  margin-top: 5px;
+}
+
+div.body .feed ul.tweets li .actions{
+  display: flex;
+  margin-top: 20px;
+}
+
+div.body .feed ul.tweets li .actions a{
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  color: #667580;
+  font-weight: bold;
+  font-size: 12px;
+  margin-left: 30px;
+}
+
+div.body .feed ul.tweets li .actions a:first-child{
+  margin-left: 0;
+}
+
+
+div.body .feed ul.tweets li .actions a img{
+  margin-right: 5px;
+}
+
 aside.info{
   width: 230px;
   display: flex;
@@ -181,7 +271,7 @@ aside.info strong{
   font-size: 21px;
 }
 
-aside.info span{
+aside.info span, .followInfo span{
   font-size: 13px;
   color: #667580;
 }
@@ -222,7 +312,7 @@ div.followersAndPhotos .title img{
   margin-right: 5px;
 }
 
-div.followersAndPhotos .title strong{
+div.followersAndPhotos .title strong, .widgetsTitle strong{
   color: #3BB9E3;
   font-size: 14px;
   font-weight: normal;
@@ -247,4 +337,86 @@ div.followersAndPhotos .title strong{
   margin: 0 5px 5px 0;
   height: 46px;
   width: 71px;
+}
+
+.widgets{
+  display: flex;
+  flex-direction: column;
+
+}
+
+.widgetsTitle, .followSection{
+  display: flex;
+}
+
+.widgetsTitle{
+  align-items: baseline;
+}
+
+.widgetsTitle strong{
+  position: relative;
+  padding-left: 10px;
+}
+
+.widgetsTitle strong::before{
+  content: '';
+  width: 2px;
+  height: 2px;
+  border-radius: 50%;
+  margin-left: 5px;
+  margin-right: 5px;
+  background-color: #3BB9E3;
+  position: absolute;
+  left: 0;
+  top: 6px;
+}
+
+.followSection{
+  align-items: center;
+  flex-shrink: 0;
+  border-bottom: 1px solid #ccd6dd;
+  padding-bottom: 10px;
+  padding-top: 10px;
+}
+
+
+.whoToFollow,.trends{
+  margin:  10px 0;
+  background-color: white;
+  padding: 10px 30px;
+}
+
+.followAvatar{
+  background-color: #D0D5D9;
+  border-radius: 50%;
+  margin: 5px 5px 5px 0;
+  height: 48px;
+  width: 57px;
+}
+
+.followInfo{
+  margin-bottom: 5px;
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+}
+
+.findFriends{
+  padding: 10px;
+  color: #3BB9E3;
+}
+
+.trends ul {
+  list-style: none;
+  margin-top: 10px;
+}
+
+.trends ul li{
+  color: #3BB9E3;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.small{
+  padding: 4px 16px;
 }
